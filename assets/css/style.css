@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Inter, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+:root {
+    --main-padding: 111px;
+}
+
+/*! -------- H E A D E R -------------- */
+
+header,
+aside,
+#wrapper {
+    background-color: black;
+    color: white;
+}
+
+.svg-line svg {
+    height: 186px;
+}
+
+.svg-line {
+    display: flex;
+    justify-content: center;
+}
+
+.header-article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 229px;
+}
+
+.header-article p {
+    padding: 20px;
+    font-family: Work Sans;
+    font-size: 20px;
+}
+
+.header-article h2 {
+    font-size: 96px;
+    margin-bottom: -40px;
+}
+
+.header-article h3 {
+    font-family: Work Sans;
+    font-size: 96px;
+    color: black;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+/*  # ------ A S I D E ------------ */
+
+aside {
+    padding: 0 var(--main-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 122px;
+}
+
+.rsvp {
+    border: 1px solid white;
+    font-family: Work Sans;
+    font-size: 21px;
+    padding: 13px 32px;
+}
+
+/* ---------------- M A I N --------------------- */
+
+
+.facts-map-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story,
+.facts {
+    padding-left: var(--main-padding);
+    font-size: 54px;
+}
+
+.story {
+    padding-right: 188px;
+}
+
+.facts p {
+    font-size: 14px;
+    font-family: Work Sans;
+}
+
+svg {
+    height: 544px;
+}
+
+/* **********     M I D D L E      ******************* */
+
+
+.middle-imges-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img1 {
+    top: -50;
+    right: 100px;
+    height: 330px;
+    width: 219px;
+}
+
+.img2 {
+    top: 280px;
+    left: 55px;
+    height: 330px;
+    width: 219px;
+}
+
+.img3 {
+    bottom: 150px;
+    right: 0px;
+    height: 330px;
+    width: 219px;
+}
+
+@media screen and (max-width:550px) {
+    .img2 {
+        display: none;
+    }
+
+}
+
+.middle-imges-container img {
+    /* height: 219px;
+    width: fit-content; */
+    position: absolute;
+
+}
+
+.middle-imges-container section {
+    text-align: center;
+    max-width: 600px;
+    margin: 40px 0;
+}
+
+.middle-imges-container h3 {
+    font-size: 116px;
+    text-align: left;
+}
+
+.middle-imges-container article {
+    line-height: 30px;
+    font-size: 22px;
+    text-align: left;
+    font-family: Work Sans;
+
+}
+
+
+/* !         G O L D E N  B E A R               */
+
+.goldenbear {
+    display: flex;
+    padding: 168px var(--main-padding);
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.poppybear {
+    background-color: white;
+    display: flex;
+    padding: 168px var(--main-padding);
+    color: black;
+    justify-content: space-between;
+}
+
+.goldenbear p,
+.poppybear p {
+    font-size: 23px;
+    font-family: Work Sans;
+}
+
+.gb-left p:first-of-type {
+    margin-top: -27px;
+}
+
+.gb-right p:last-of-type {
+    margin-top: 23px;
+}
+
+.goldenbear h3,
+.poppybear h3 {
+    font-size: 103px;
+}
+
+.goldenbear article,
+.poppybear article {
+    font-size: 31px;
+}
+
+.gb-left {
+    width: 505px;
+}
+
+.gb-right {
+    width: 539px;
+    margin-right: 40px;
+}
+
+/* #         G  B   I M G          */
+
+.gb-img {
+    background-color: black;
+    padding-left: var(--main-padding);
+    display: flex;
+    align-items: center;
+    /* margin-bottom: -200px; */
+}
+
+
+
+.collage-groß img {
+    height: 731px;
+    margin-bottom: -170px;
+}
+
+.collage-klein img {
+    height: 473px;
+    margin-left: -80px;
+    margin-top: 50px;
+    margin-bottom: -170px;
+}
+
+.cc-circle-2 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.cc-circle-2 img {
+    height: 422px;
+    margin-right: -170px;
+    margin-top: -200px;
+
+}
+
+.pb-img {
+    padding-right: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.pb-img .collage-groß img {
+    height: 731px;
+
+}
+
+.pb-img .collage-klein img {
+    height: 473px;
+    margin-top: 50px;
+    margin-left: -1010px;
+}
